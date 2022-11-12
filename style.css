@@ -1,0 +1,461 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: #00807E;
+}
+
+img {
+	vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
+	transition: .25s;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* reset END */
+body {
+	font-family: 'Roboto', sans-serif,'Noto Sans TC', sans-serif;
+}
+
+.input-area {
+	padding: 120px 12px 100px 12px;
+}
+
+.input-block {
+	max-width: 920px;
+	display: flex;
+	margin: 0 auto;
+	padding: 60px 95px;
+	color: #00807E;
+	border-radius: 12px;
+	box-shadow: 0 3px 6px 3px #00000029;
+}
+
+@media (max-width:767px) {
+	.input-block {
+		flex-wrap: wrap;
+		padding: 24px 50px;
+	}
+}
+
+.logo {
+	display: block;
+	flex-basis: 100%;
+	padding-right: 30px;
+}
+
+.input {
+	flex-basis: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.input-list {
+	flex-grow: 1;
+	text-align: left;
+}
+
+.input-list th {
+	white-space: nowrap;
+	font-weight: 500;
+	padding-right: 31px;
+}
+
+.input-list td {
+	width: 100%;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 33px;
+	margin-bottom: 32px;
+	border-bottom: 3px solid #00807E;
+}
+
+.material-symbols-outlined {
+	font-size: 22px;
+	margin-right: 6px;
+}
+
+
+.input-area input,
+.input-area select,
+.input-area textarea {
+	padding: 8px 12px;
+	margin-bottom: 16px;
+	width: 100%;
+	background-color: #FAFAFA;
+	line-height: 22px;
+	color: #818A91;
+	border-radius: 4px 4px 0 0;
+	border: 0;
+	border-bottom: 1px solid #00807E;
+}
+
+.input-area input:focus,
+.input-area select:focus,
+.input-area textarea:focus {
+	outline: 0;
+	box-shadow: 0;
+}
+
+.input-area .btn {
+	width: fit-content;
+	color: #FFF;
+	font-size: 20px;
+	background-color: #00807E;
+	border-radius: 4.8px;
+	padding: 10px 40px;
+	margin-left: auto;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+
+.input-area .btn:hover {
+	color: #00807E;
+	background-color: #FFF;
+	border-color: #00807E;
+}
+
+textarea {
+	resize: none;
+}
+
+.input-list tr:nth-child(7) th {
+	vertical-align: top;
+}
+
+.output-area {
+	padding-top: 64px;
+	padding-bottom: 119px;
+	background-color: #F7F7F7;
+}
+
+.container {
+	max-width: 1134px;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin: 0 auto;
+}
+
+.container select {
+	width: 255px;
+}
+
+.filter-group {
+	padding-left: 95px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px 30px;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.filter-group-select-txt {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	row-gap: 10px;
+	margin-top: 12px;
+}
+
+.filter-group select {
+	line-height: 22px;
+	padding: 8px 12px;
+	border-radius: 4px;
+	color: #818A91;
+	border: 1px solid #CED4DA;
+}
+
+.filter-group .txt {
+	color: #818A91;
+	margin-left: 10px;
+}
+
+#chart {
+	margin-right: 8%;
+}
+
+.ticket-group {
+	width: calc(100% + 30px);
+	margin-top: 52px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.ticket-item {
+	width: calc(100% / 3);
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 38px;
+	color: #00807E;
+}
+
+@media (max-width:991px) {
+	.ticket-item {
+		width: 50%;
+	}
+}
+
+@media (max-width:767px) {
+	.ticket-item {
+		width: 100%;
+	}
+}
+
+.ticket-item .card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	box-shadow: 0 3px 6px 3px #00000029;
+}
+
+.photo {
+	width: 100%;
+	overflow: hidden;
+}
+.card:hover img {
+	transform: scale(1.2);
+}
+
+.top {
+	position: relative;
+}
+
+.area-tag {
+	position: absolute;
+	top: -12px;
+	left: 0;
+	z-index: 1;
+	width: fit-content;
+	padding: 8px 20px;
+	font-size: 20px;
+	border-radius: 0 4px 4px 0;
+	color: #FFFFFF;
+	background-color: #64C3BF;
+}
+
+.range {
+	position: absolute;
+	bottom: -12px;
+	left: 0;
+	line-height: 22px;
+	padding: 5px 8px;
+	border-radius: 0 4px 4px 0;
+	color: #FFFFFF;
+	background-color: #00807E;
+}
+
+.card .content {
+	padding: 20px;
+}
+
+.ticket-title {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 33px;
+	padding-bottom: 4px;
+	margin-bottom: 16px;
+	border-bottom: 2px solid #00807E;
+}
+
+.ticket-description {
+	line-height: 24px;
+	text-align: justify;
+	color: #818A91;
+	height: 144px;
+}
+
+.footer {
+	margin-top: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 22px 22px 14px 22px;
+}
+
+.footer .last {
+	line-height: 22px;
+	font-weight: 500;
+}
+
+.footer .price {
+	font-size: 32px;
+	line-height: 43px;
+}
+
+.footer .price span {
+	font-size: 16px;
+	line-height: 22px;
+	vertical-align: middle;
+}
+
+.material-symbols-outlined {
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' 48
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+}
+
+.small {
+	margin-left: auto;
+}
